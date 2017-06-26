@@ -88,3 +88,17 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+### FRONTERA
+SPIDER_MIDDLEWARES = {}
+DOWNLOADER_MIDDLEWARES = {}
+SPIDER_MIDDLEWARES.update({
+    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerSpiderMiddleware': 999
+}, )
+DOWNLOADER_MIDDLEWARES.update({
+    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerDownloaderMiddleware':
+        999
+})
+SCHEDULER = 'frontera.contrib.scrapy.schedulers.frontier.FronteraScheduler'
+FRONTERA_SETTINGS = 'hn_scraper.frontera_settings'
