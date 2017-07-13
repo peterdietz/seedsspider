@@ -1,3 +1,5 @@
 *.pyc
-hn_frontier.db
+hn_scraper/*.pyc
+*.db
 results.csv
+.scrapy

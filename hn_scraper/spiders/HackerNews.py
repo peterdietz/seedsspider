@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.http import Request
-from scrapy.spider import Spider
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.spiders import Spider
+from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
 
 from hn_scraper.items import HnArticleItem
@@ -10,10 +10,12 @@ from hn_scraper.items import HnArticleItem
 
 class HackernewsSpider(Spider):
     name = "HackerNews"
-    allowed_domains = ["news.ycombinator.com"]
-    start_urls = ('https://news.ycombinator.com/', )
+    #allowed_domains = ["news.ycombinator.com"]
+    #start_urls = ('https://news.ycombinator.com/', )
+    allowed_domains = ["https://gas.tesla.com"]
+    start_urls = ('',)
 
-    link_extractor = SgmlLinkExtractor(
+    link_extractor = LinkExtractor(
             allow=('news', ),
             restrict_xpaths=('//a[text()="More"]', ))
 

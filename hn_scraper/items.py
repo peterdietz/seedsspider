@@ -19,3 +19,14 @@ class HnArticleItem(scrapy.Item):
     id = scrapy.Field()
     author = scrapy.Field()
     pass
+
+class SeedItem(scrapy.Item):
+    url = scrapy.Field()
+    title = scrapy.Field()
+    language = scrapy.Field()
+    response_code = scrapy.Field()
+    num_links = scrapy.Field()
+    domain = scrapy.Field()
+    query_path = scrapy.Field()
+    score = scrapy.Field()
+    pass

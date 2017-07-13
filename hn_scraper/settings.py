@@ -46,15 +46,17 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'hn_scraper.middlewares.HnScraperSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+    'hn_scraper.middlewares.HnScraperSpiderMiddleware': 543,
+}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'hn_scraper.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'hn_scraper.middlewares.HnDownloaderMiddleware': 543,
 #}
+
+HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.Filesystem.CacheStorage'
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -70,7 +72,7 @@ ROBOTSTXT_OBEY = True
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
@@ -83,22 +85,30 @@ ROBOTSTXT_OBEY = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
-#HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = 'httpcache'
-#HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 86400
+HTTPCACHE_DIR = 'httpcache'
+HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 
 ### FRONTERA
-SPIDER_MIDDLEWARES = {}
-DOWNLOADER_MIDDLEWARES = {}
-SPIDER_MIDDLEWARES.update({
-    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerSpiderMiddleware': 999
-}, )
-DOWNLOADER_MIDDLEWARES.update({
-    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerDownloaderMiddleware':
-        999
-})
-SCHEDULER = 'frontera.contrib.scrapy.schedulers.frontier.FronteraScheduler'
-FRONTERA_SETTINGS = 'hn_scraper.frontera_settings'
+#SPIDER_MIDDLEWARES = {}
+#DOWNLOADER_MIDDLEWARES = {}
+#SPIDER_MIDDLEWARES.update({
+#    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerSpiderMiddleware': 999
+#}, )
+#DOWNLOADER_MIDDLEWARES.update({
+#    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerDownloaderMiddleware':
+#        999
+#})
+#SCHEDULER = 'frontera.contrib.scrapy.schedulers.frontier.FronteraScheduler'
+#FRONTERA_SETTINGS = 'hn_scraper.frontera_settings'
+
+#AJAXCRAWL_ENABLED = True
+
+import os
+print os.getcwd()
+
+FEED_URI = 'file:///'+os.getcwd()+'/export.csv'
+FEED_FORMAT = 'csv'

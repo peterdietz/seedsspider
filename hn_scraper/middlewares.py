@@ -6,6 +6,7 @@
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from items import SeedItem
 
 
 class HnScraperSpiderMiddleware(object):
@@ -41,6 +42,12 @@ class HnScraperSpiderMiddleware(object):
 
         # Should return either None or an iterable of Response, dict
         # or Item objects.
+        item = SeedItem()
+        item['url'] = response.url
+        item['response_code'] = response.status
+        item['title'] = "SpiderException -- " + str(exception)
+        yield item
+
         pass
 
     def process_start_requests(self, start_requests, spider):
@@ -54,3 +61,16 @@ class HnScraperSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+
+#class HnDownloaderMiddleware(object):
+#    def process_exception(self, request, exception, spider):
+#        item = SeedItem()
+#        item['url'] = request.url
+#        item['response_code'] = 000
+#        item['title'] = 'Exception -- ' + str(exception) + " maybe robots"
+#        print "process_exception - "
+        #yield item
+        #return request
+#        yield item

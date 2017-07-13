@@ -1,0 +1,285 @@
+domain,query_path,language,title,url,response_code,num_links,score
+,,,NotImplementedXML,http://www.ivap.euskadi.eus/contenidos/ds_general/catalogo_datos_opendata/opendata/federador_datos.rdf,200,,
+,,,SpiderException -- Ignoring non-200 response,http://www.example.com/courses/1704/assignments/1423/submissions/4067,404,,
+quizlet.com,,en-gb,American Literature Flashcards | Quizlet,https://quizlet.com/37641628/american-literature-flash-cards/,200,29,1
+,,,NotImplementedBinary,https://fas.org/sgp/crs/secrecy/RL34120.pdf,200,,
+www.taringa.net,,es,"Kaprosuchus, el cocodrilo jabalí - Taringa!",http://www.taringa.net/posts/info/18045919/Kaprosuchus-el-cocodrilo-jabali.html,200,137,0
+www.wow.com,,en,Microsoft Macro Assembler - WOW.com,http://www.wow.com/wiki/Microsoft_Macro_Assembler,200,293,1
+en.wikipedia.org,,en,Kosciuszko Huts Association - Wikipedia,https://en.wikipedia.org/wiki/Kosciuszko_Huts_Association,200,103,1
+en.wikipedia.org,,en,Kosciuszko Huts Association - Wikipedia,https://en.wikipedia.org/wiki/Kosciuszko_Huts_Association,200,103,1
+en.wikipedia.org,,en,Donald Woods - Wikipedia,https://en.wikipedia.org/wiki/Donald_Woods,200,312,1
+en.wikipedia.org,,en,Anne Bradstreet - Wikipedia,https://en.wikipedia.org/wiki/Anne_Bradstreet,200,472,1
+en.wikipedia.org,,en,Donald Woods - Wikipedia,https://en.wikipedia.org/wiki/Donald_Woods,200,312,1
+en.wikipedia.org,,en,Anne Bradstreet - Wikipedia,https://en.wikipedia.org/wiki/Anne_Bradstreet,200,472,1
+,,,SpiderException -- Ignoring non-200 response,https://en.wikipedia.org/wiki/Please_clarify,404,,
+,,,SpiderException -- Ignoring non-200 response,https://en.wikipedia.org/wiki/Manual_of_Style/Words_to_watch,404,,
+sv.wikipedia.org,,sv,Anne Bradstreet – Wikipedia,https://sv.wikipedia.org/wiki/Anne_Bradstreet,200,117,0
+es.wikipedia.org,,es,"Kaprosuchus - Wikipedia, la enciclopedia libre",https://es.wikipedia.org/wiki/Kaprosuchus,200,176,0
+tg.wikipedia.org,,tg,Анна Бредстрит — Википедиа,https://tg.wikipedia.org/wiki/%D0%90%D0%BD%D0%BD%D0%B0_%D0%91%D1%80%D0%B5%D0%B4%D1%81%D1%82%D1%80%D0%B8%D1%82,200,104,0
+tl.wikipedia.org,,tl,"Anne Bradstreet - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Anne_Bradstreet,200,118,0
+,,,SpiderException -- Ignoring non-200 response,https://tg.wikipedia.org/wiki/%D0%9B%D0%BE%D0%B8%D2%B3%D0%B0:%D0%A2%D0%B0%D0%BA%D0%B7%D0%B8%D0%B1%D0%BD%D0%BE%D0%BC%D0%B0%D0%B8_%D1%83%D0%BC%D1%83%D0%BC%D3%A3,404,,
+tl.wikipedia.org,,tl,"Wikipedia:Pangkalahatang pagtatanggi - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Wikipedia:Pangkalahatang_pagtatanggi,200,228,0
+en.wikipedia.org,,en,New South Wales - Wikipedia,https://en.wikipedia.org/wiki/NSW,200,1358,1
+ru.wikipedia.org,,ru,"Брэдстрит, Анна — Википедия","https://ru.wikipedia.org/wiki/%D0%91%D1%80%D1%8D%D0%B4%D1%81%D1%82%D1%80%D0%B8%D1%82,_%D0%90%D0%BD%D0%BD%D0%B0",200,181,0
+en.wikipedia.org,,en,Kosciuszko National Park - Wikipedia,https://en.wikipedia.org/wiki/Kosciuszko_National_Park,200,645,1
+ru.wikipedia.org,,ru,"Ковалёва, Ирина — Википедия","https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B2%D0%B0%D0%BB%D1%91%D0%B2%D0%B0,_%D0%98%D1%80%D0%B8%D0%BD%D0%B0",200,65,0
+zh.wikipedia.org,,zh,可西歐斯可國家公園 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E5%8F%AF%E8%A5%BF%E6%AD%90%E6%96%AF%E5%8F%AF%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92,200,123,0
+tl.wikipedia.org,,tl,"Mga natatanging pahina - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Natatangi:Natatanging_mga_pahina,200,151,0
+sv.wikipedia.org,,sv,Kosciuszko National Park – Wikipedia,https://sv.wikipedia.org/wiki/Kosciuszko_National_Park,200,145,0
+zh-yue.wikipedia.org,,yue,Wikipedia:一般免責聲明 - 維基百科，自由嘅百科全書,https://zh-yue.wikipedia.org/wiki/Wikipedia:%E4%B8%80%E8%88%AC%E5%85%8D%E8%B2%AC%E8%81%B2%E6%98%8E,200,210,0
+,,,SpiderException -- Ignoring non-200 response,https://tl.wikipedia.org/wiki/Natatangi:Nakakawing_ng_kamakailang_pagbabago/Anne_Bradstreet,404,,
+,,,SpiderException -- Ignoring non-200 response,https://tl.wikipedia.org/wiki/Natatangi:Ano_ang_nakakawing_dito/Anne_Bradstreet,404,,
+en.wikipedia.org,,en,Australia - Wikipedia,https://en.wikipedia.org/wiki/Australia,200,3401,1
+en.wikipedia.org,,en,Volunteering - Wikipedia,https://en.wikipedia.org/wiki/Volunteering,200,814,1
+tl.wikipedia.org,,tl,"Wikipedia:Tulong - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Wikipedia:Tulong,200,282,0
+en.wikipedia.org,,en,Wikipedia:Deletion policy - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Deletion_policy,200,646,1
+en.wikipedia.org,,en,Wikipedia:Redirect - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Redirect,200,475,1
+tl.wikipedia.org,,tl,"Pinakamaraming ugnay sa mga kategorya - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Natatangi:Mga_kategoryang_may_pinakamaraming_kawing,200,94,0
+zh-yue.wikipedia.org,,yue,Help:目錄 - 維基百科，自由嘅百科全書,https://zh-yue.wikipedia.org/wiki/Help:%E7%9B%AE%E9%8C%84,200,270,0
+en.wikipedia.org,,en,Wikipedia:Merging - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Merging,200,482,1
+tl.wikipedia.org,,tl,"Users who will be renamed - Wikipedia, ang malayang ensiklopedya",https://tl.wikipedia.org/wiki/Natatangi:UsersWhoWillBeRenamed,200,40,0
+en.wikipedia.org,,en,Wikipedia:Identifying and using independent sources - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Independent_sources,200,522,1
+sr.wikipedia.org,,sr,"Кошћушко (национални парк) — Википедија, слободна енциклопедија",https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D1%9B%D1%83%D1%88%D0%BA%D0%BE_(%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B8_%D0%BF%D0%B0%D1%80%D0%BA),200,83,0
+en.wikipedia.org,,en,List of business entities - Wikipedia,https://en.wikipedia.org/wiki/Types_of_business_entity,200,1533,1
+en.wikipedia.org,,en,Wikipedia:Identifying reliable sources - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources,200,638,1
+zh.wikipedia.org,,zh,维基百科:合并和移动页面 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Wikipedia:%E5%90%88%E5%B9%B6%E5%92%8C%E7%A7%BB%E5%8A%A8%E9%A1%B5%E9%9D%A2,200,150,0
+en.wikipedia.org,,en,Canberra - Wikipedia,https://en.wikipedia.org/wiki/Canberra,200,2739,1
+en.wikipedia.org,,en,UTC+11:00 - Wikipedia,https://en.wikipedia.org/wiki/UTC%2B11:00,200,312,1
+en.wikipedia.org,,en,File:Parliamenthouse2.jpg - Wikipedia,https://en.wikipedia.org/wiki/File:Parliamenthouse2.jpg,200,104,1
+en.wikipedia.org,,en,Carbon tax - Wikipedia,https://en.wikipedia.org/wiki/Carbon_tax,200,1682,1
+sk.wikipedia.org,,sk,Wikipédia:Presmerovanie – Wikipédia,https://sk.wikipedia.org/wiki/Wikip%C3%A9dia:Presmerovanie,200,100,0
+en.wikipedia.org,,en,Coaching - Wikipedia,https://en.wikipedia.org/wiki/Coaching,200,435,1
+en.wikipedia.org,,en,Saint Kitts and Nevis - Wikipedia,https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis,200,1256,1
+en.wikipedia.org,,en,United Kingdom Hydrographic Office - Wikipedia,https://en.wikipedia.org/wiki/United_Kingdom_Hydrographic_Office,200,517,1
+en.wikipedia.org,,en,Wikipedia:Featured articles - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Featured_articles,200,5379,1
+en.wikipedia.org,,en,Limited liability partnership - Wikipedia,https://en.wikipedia.org/wiki/Limited_liability_partnership,200,333,1
+zh.wikipedia.org,,zh,维基百科:特色条目 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Wikipedia:%E7%89%B9%E8%89%B2%E6%9D%A1%E7%9B%AE,200,930,0
+zh.wikipedia.org,,zh,有限责任合伙 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%90%88%E4%BC%99,200,164,0
+en.wikipedia.org,,en,Template talk:Business administration - Wikipedia,https://en.wikipedia.org/wiki/Template_talk:Business_administration,200,63,1
+en.wikipedia.org,,en,Wikipedia:Dispute resolution - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Resolving_disputes,200,574,1
+en.wikipedia.org,,en,User group rights - Wikipedia,https://en.wikipedia.org/wiki/Special:ListGroupRights,200,156,1
+zh.wikipedia.org,,zh,维基百科:争论的解决 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Wikipedia:%E4%BA%89%E8%AE%BA%E7%9A%84%E8%A7%A3%E5%86%B3,200,803,0
+fa.wikipedia.org,,fa,شرکت با مسئولیت محدود - ویکی‌پدیا، دانشنامهٔ آزاد,https://fa.wikipedia.org/wiki/%D8%B4%D8%B1%DA%A9%D8%AA_%D8%A8%D8%A7_%D9%85%D8%B3%D8%A6%D9%88%D9%84%DB%8C%D8%AA_%D9%85%D8%AD%D8%AF%D9%88%D8%AF,200,177,0
+en.wikipedia.org,,en,Wikipedia:Article wizard/Redirect - Wikipedia,https://en.wikipedia.org/wiki/Wikipedia:Article_wizard/Redirect,200,93,1
+zh.wikipedia.org,,zh,维基百科:边缘学说 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Wikipedia:%E8%BE%B9%E7%BC%98%E5%AD%A6%E8%AF%B4,200,563,0
+en.wikipedia.org,,en,MediaWiki - Wikipedia,https://en.wikipedia.org/wiki/MediaWiki,200,1273,1
+en.wikipedia.org,,en,Lavanify - Wikipedia,https://en.wikipedia.org/wiki/Lavanify,200,248,1
+zh.wikipedia.org,,zh,维基百科:直言不讳 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Wikipedia:%E7%9B%B4%E8%A8%80%E4%B8%8D%E8%AE%B3,200,476,0
+en.wikipedia.org,,en,Armillaria gallica - Wikipedia,https://en.wikipedia.org/wiki/Armillaria_gallica,200,725,1
+en.wikipedia.org,,en,John Douglas (architect) - Wikipedia,https://en.wikipedia.org/wiki/John_Douglas_(architect),200,952,1
+en.wikipedia.org,,en,Manhunter (film) - Wikipedia,https://en.wikipedia.org/wiki/Manhunter_(film),200,851,1
+en.wikipedia.org,,en,"Changes related to ""Template talk:Business administration"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Template_talk:Business_administration,200,170,1
+en.wikipedia.org,,en,Ring-tailed lemur - Wikipedia,https://en.wikipedia.org/wiki/Ring-tailed_lemur,200,1240,1
+en.wikipedia.org,,en,"Pages that link to ""Template talk:Business administration"" - Wikipedia",https://en.wikipedia.org/wiki/Special:WhatLinksHere/Template_talk:Business_administration,200,207,1
+en.wikipedia.org,,en,"Hillsboro, Oregon - Wikipedia","https://en.wikipedia.org/wiki/Hillsboro,_Oregon",200,1485,1
+en.wikipedia.org,,en,David I of Scotland - Wikipedia,https://en.wikipedia.org/wiki/David_I_of_Scotland,200,1058,1
+en.wikipedia.org,,en,Users - Wikipedia,https://en.wikipedia.org/wiki/Special:ListUsers,200,213,1
+en.wikipedia.org,,en,Archaea - Wikipedia,https://en.wikipedia.org/wiki/Archaea,200,2605,1
+en.wikipedia.org,,en,Internet bot - Wikipedia,https://en.wikipedia.org/wiki/Internet_bot,200,244,1
+en.wikipedia.org,,en,Mark Hanna - Wikipedia,https://en.wikipedia.org/wiki/Mark_Hanna,200,1594,1
+en.wikipedia.org,,en,File:AcaWiki Semantic Forms screenshot.png - Wikipedia,https://en.wikipedia.org/wiki/File:AcaWiki_Semantic_Forms_screenshot.png,200,72,1
+en.wikipedia.org,,en,Helianthus - Wikipedia,https://en.wikipedia.org/wiki/Sunflower,200,535,1
+zh.wikipedia.org,,zh,納古菌門 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E7%B4%8D%E5%8F%A4%E8%8F%8C%E9%96%80,200,186,0
+en.wikipedia.org,,en,Diocletian - Wikipedia,https://en.wikipedia.org/wiki/Diocletian,200,1858,1
+en.wikipedia.org,,en,Laryngitis - Wikipedia,https://en.wikipedia.org/wiki/Laryngitis,200,840,1
+en.wikipedia.org,,en,DPANN - Wikipedia,https://en.wikipedia.org/wiki/DPANN,200,194,1
+zh.wikipedia.org,,zh,沉積物 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E6%B2%89%E7%A9%8D%E7%89%A9,200,242,0
+zh.wikipedia.org,,zh,古菌 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E5%8F%A4%E8%8F%8C,200,1419,0
+zh.wikipedia.org,,zh,染色体 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E6%9F%93%E8%89%B2%E4%BD%93,200,682,0
+en.wikipedia.org,,en,Osmotic shock - Wikipedia,https://en.wikipedia.org/wiki/Osmotic_shock,200,149,1
+en.wikipedia.org,,en,Ars Technica - Wikipedia,https://en.wikipedia.org/wiki/Ars_Technica,200,468,1
+zh.wikipedia.org,,zh,豚鼠 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E8%B1%9A%E9%BC%A0,200,889,0
+en.wikipedia.org,,en,Oregon Judicial Department - Wikipedia,https://en.wikipedia.org/wiki/Oregon_Judicial_Department,200,158,1
+en.wikipedia.org,,en,Citric acid cycle - Wikipedia,https://en.wikipedia.org/wiki/Citric_acid_cycle,200,979,1
+en.wikipedia.org,,en,Amoeba - Wikipedia,https://en.wikipedia.org/wiki/Amoeboid,200,1319,1
+en.wikipedia.org,,en,England and King David I - Wikipedia,https://en.wikipedia.org/wiki/England_and_King_David_I,200,256,1
+en.wikipedia.org,,en,History of Earth - Wikipedia,https://en.wikipedia.org/wiki/History_of_Earth,200,2402,1
+en.wikipedia.org,,en,Saint Malachy - Wikipedia,https://en.wikipedia.org/wiki/Saint_Malachy,200,305,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/978-0-12-027740-7,200,1443,1
+en.wikipedia.org,,en,Cultivar - Wikipedia,https://en.wikipedia.org/wiki/Cultivars,200,747,1
+en.wikipedia.org,,en,Abiogenesis - Wikipedia,https://en.wikipedia.org/wiki/Abiogenesis,200,4319,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/1-4051-4404-1,200,1443,1
+zh.wikipedia.org,,zh,栽培品种 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E6%A0%BD%E5%9F%B9%E5%93%81%E7%A7%8D,200,148,0
+zh-yue.wikipedia.org,,yue,無生源論 - 維基百科，自由嘅百科全書,https://zh-yue.wikipedia.org/wiki/%E7%84%A1%E7%94%9F%E6%BA%90%E8%AB%96,200,264,0
+zh.wikipedia.org,,zh,与“栽培品种”有关的更改 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Special:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E6%A0%BD%E5%9F%B9%E5%93%81%E7%A7%8D,200,84,0
+en.wikipedia.org,,en,Hospital-acquired pneumonia - Wikipedia,https://en.wikipedia.org/wiki/Healthcare-associated_pneumonia,200,656,1
+en.wikipedia.org,,en,Community-acquired pneumonia - Wikipedia,https://en.wikipedia.org/wiki/Community-acquired_pneumonia,200,703,1
+en.wikipedia.org,,en,Archaeal Richmond Mine acidophilic nanoorganisms - Wikipedia,https://en.wikipedia.org/wiki/ARMAN,200,233,1
+en.wikipedia.org,,en,Outer core - Wikipedia,https://en.wikipedia.org/wiki/Outer_core,200,240,1
+en.wikipedia.org,,en,Geothermal gradient - Wikipedia,https://en.wikipedia.org/wiki/Geothermal_gradient,200,419,1
+en.wikipedia.org,,en,File:WIKIPEDIA ARTICLE - ABIOGENESIS (Part 01).ogg - Wikipedia,https://en.wikipedia.org/wiki/File:WIKIPEDIA_ARTICLE_-_ABIOGENESIS_(Part_01).ogg,200,72,1
+zh.wikipedia.org,,zh,地溫梯度 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E5%9C%B0%E6%BA%AB%E6%A2%AF%E5%BA%A6,200,178,0
+en.wikipedia.org,,en,Nitrogenous base - Wikipedia,https://en.wikipedia.org/wiki/Nitrogenous_bases,200,137,1
+en.wikipedia.org,,en,Amine - Wikipedia,https://en.wikipedia.org/wiki/Amine,200,679,1
+en.wikipedia.org,,en,Stephen Blair Hedges - Wikipedia,https://en.wikipedia.org/wiki/Stephen_Blair_Hedges,200,216,1
+en.wikipedia.org,,en,BioSystems - Wikipedia,https://en.wikipedia.org/wiki/BioSystems,200,124,1
+en.wikipedia.org,,en,Hydrogen cyanide - Wikipedia,https://en.wikipedia.org/wiki/Hydrogen_cyanide,200,1183,1
+en.wikipedia.org,,en,Miracle - Wikipedia,https://en.wikipedia.org/wiki/Miracle,200,749,1
+en.wikipedia.org,,en,Methanol - Wikipedia,https://en.wikipedia.org/wiki/Methanol,200,1701,1
+en.wikipedia.org,,en,Mid-Hudson Library System - Wikipedia,https://en.wikipedia.org/wiki/Mid-Hudson_Library_System,200,263,1
+en.wikipedia.org,,en,List of medicine contamination incidents - Wikipedia,https://en.wikipedia.org/wiki/List_of_medicine_contamination_incidents,200,161,1
+vi.wikipedia.org,,vi,Viêm phổi mắc phải ở cộng đồng – Wikipedia tiếng Việt,https://vi.wikipedia.org/wiki/Vi%C3%AAm_ph%E1%BB%95i_m%E1%BA%AFc_ph%E1%BA%A3i_%E1%BB%9F_c%E1%BB%99ng_%C4%91%E1%BB%93ng,200,102,0
+en.wikipedia.org,,en,Drug pollution - Wikipedia,https://en.wikipedia.org/wiki/Drug_pollution,200,130,1
+en.wikipedia.org,,en,"Binghamton, New York - Wikipedia","https://en.wikipedia.org/wiki/Binghamton,_New_York",200,1773,1
+en.wikipedia.org,,en,Magnetic field - Wikipedia,https://en.wikipedia.org/wiki/Magnetic_field,200,1040,1
+en.wikipedia.org,,en,Fluid - Wikipedia,https://en.wikipedia.org/wiki/Fluid,200,274,1
+uk.wikipedia.org,,uk,Госпітальна пневмонія — Вікіпедія,https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D0%BF%D1%96%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%D0%BD%D1%96%D1%8F,200,98,0
+en.wikipedia.org,,en,Amide - Wikipedia,https://en.wikipedia.org/wiki/Amide,200,570,1
+zh.wikipedia.org,,zh,酰胺 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E9%85%B0%E8%83%BA,200,240,0
+vi.wikipedia.org,,vi,Gradient địa nhiệt – Wikipedia tiếng Việt,https://vi.wikipedia.org/wiki/Gradient_%C4%91%E1%BB%8Ba_nhi%E1%BB%87t,200,228,0
+uk.wikipedia.org,,uk,Аміди — Вікіпедія,https://uk.wikipedia.org/wiki/%D0%90%D0%BC%D1%96%D0%B4%D0%B8,200,309,0
+en.wikipedia.org,,en,Amine - Wikipedia,https://en.wikipedia.org/wiki/Amino_group,200,680,1
+en.wikipedia.org,,en,Category:Year of birth missing (living people) - Wikipedia,https://en.wikipedia.org/wiki/Category:Year_of_birth_missing_(living_people),200,1032,1
+en.wikipedia.org,,en,Gmelin database - Wikipedia,https://en.wikipedia.org/wiki/Gmelin_database,200,83,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/978-1-4020-2522-8,200,1443,1
+en.wikipedia.org,,en,Aromatic hydrocarbon - Wikipedia,https://en.wikipedia.org/wiki/Aromatic_hydrocarbon,200,809,1
+en.wikipedia.org,,en,"Changes related to ""Mid-Hudson Library System"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Mid-Hudson_Library_System,200,127,1
+en.wikipedia.org,,en,"Pages that link to ""Mid-Hudson Library System"" - Wikipedia",https://en.wikipedia.org/wiki/Special:WhatLinksHere/Mid-Hudson_Library_System,200,93,1
+en.wikipedia.org,,en,GABAA receptor positive allosteric modulator - Wikipedia,https://en.wikipedia.org/wiki/GABAA_receptor_positive_allosteric_modulator,200,1012,1
+en.wikipedia.org,,en,Amoxapine - Wikipedia,https://en.wikipedia.org/wiki/Amoxapine,200,4711,1
+en.wikipedia.org,,en,List of foodborne illness outbreaks - Wikipedia,https://en.wikipedia.org/wiki/List_of_foodborne_illness_outbreaks,200,237,1
+en.wikipedia.org,,en,Time (magazine) - Wikipedia,https://en.wikipedia.org/wiki/Time_magazine,200,782,1
+en.wikipedia.org,,en,Harpur Palate - Wikipedia,https://en.wikipedia.org/wiki/Harpur_Palate,200,118,1
+en.wikipedia.org,,en,Differential rotation - Wikipedia,https://en.wikipedia.org/wiki/Differential_rotation,200,142,1
+war.wikipedia.org,,war,Amide - Wikipedia,https://war.wikipedia.org/wiki/Amide,200,101,0
+en.wikipedia.org,,en,Pitch drop experiment - Wikipedia,https://en.wikipedia.org/wiki/Pitch_drop_experiment,200,215,1
+zh.wikipedia.org,,zh,瀝青滴漏實驗 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E7%80%9D%E9%9D%92%E6%BB%B4%E6%BC%8F%E5%AF%A6%E9%A9%97,200,119,0
+en.wikipedia.org,,en,Category:Date of birth missing - Wikipedia,https://en.wikipedia.org/wiki/Category:Date_of_birth_missing,200,339,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/0412798603,200,1443,1
+mzn.wikipedia.org,,mzn,تایم - ویکی‌پدیا,https://mzn.wikipedia.org/wiki/%D8%AA%D8%A7%DB%8C%D9%85,200,137,0
+en.wikipedia.org,,en,Reham Abdel Ghafour - Wikipedia,https://en.wikipedia.org/wiki/Reham_Abdel_Ghafour,200,108,1
+en.wikipedia.org,from=Sp,en,Category:Year of birth missing (living people) - Wikipedia,https://en.wikipedia.org/wiki/Category:Year_of_birth_missing_(living_people)?from=Sp,200,1034,1
+en.wikipedia.org,from=Ym,en,Category:Year of birth missing (living people) - Wikipedia,https://en.wikipedia.org/wiki/Category:Year_of_birth_missing_(living_people)?from=Ym,200,1034,1
+en.wikipedia.org,,en,Template:Monoamine reuptake inhibitors - Wikipedia,https://en.wikipedia.org/wiki/Template:Monoamine_reuptake_and_release_modulators,200,444,1
+en.wikipedia.org,,en,Deena Guzder - Wikipedia,https://en.wikipedia.org/wiki/Deena_Guzder,200,169,1
+mzn.wikipedia.org,,mzn,شا صفحه‌ئون - ویکی‌پدیا,https://mzn.wikipedia.org/wiki/%D8%B4%D8%A7:%D8%B5%D9%81%D8%AD%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C_%D9%88%DB%8C%DA%98%D9%87,200,145,0
+en.wikipedia.org,,en,DailyMed - Wikipedia,https://en.wikipedia.org/wiki/DailyMed,200,100,1
+en.wikipedia.org,,en,"Changes related to ""Harpur Palate"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Harpur_Palate,200,241,1
+en.wikipedia.org,,en,William James Beal - Wikipedia,https://en.wikipedia.org/wiki/William_James_Beal,200,325,1
+ur.wikipedia.org,,ur,زمرہ:تاریخ پیدائش غیر موجود - آزاد دائرۃ المعارف، ویکیپیڈیا,https://ur.wikipedia.org/wiki/%D8%B2%D9%85%D8%B1%DB%81:%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE_%D9%BE%DB%8C%D8%AF%D8%A7%D8%A6%D8%B4_%D8%BA%DB%8C%D8%B1_%D9%85%D9%88%D8%AC%D9%88%D8%AF,200,68,0
+en.wikipedia.org,,en,Hanns Alexander - Wikipedia,https://en.wikipedia.org/wiki/Hanns_Alexander,200,135,1
+en.wikipedia.org,,en,Constitutive androstane receptor - Wikipedia,https://en.wikipedia.org/wiki/Constitutive_androstane_receptor,200,1624,1
+en.wikipedia.org,,en,European Medicines Agency - Wikipedia,https://en.wikipedia.org/wiki/European_Medicines_Agency,200,481,1
+en.wikipedia.org,,en,Romualdas Aleliūnas - Wikipedia,https://en.wikipedia.org/wiki/Romualdas_Aleli%C5%ABnas,200,105,1
+en.wikipedia.org,,en,Sarpogrelate - Wikipedia,https://en.wikipedia.org/wiki/Sarpogrelate,200,1158,1
+en.wikipedia.org,,en,5-HT2 receptor - Wikipedia,https://en.wikipedia.org/wiki/5-HT2_receptor,200,1639,1
+en.wikipedia.org,,en,Salih Saif Aldin - Wikipedia,https://en.wikipedia.org/wiki/Salih_Saif_Aldin,200,105,1
+en.wikipedia.org,,en,Velusetrag - Wikipedia,https://en.wikipedia.org/wiki/Velusetrag,200,1248,1
+en.wikipedia.org,,en,Loxapine - Wikipedia,https://en.wikipedia.org/wiki/Loxapine,200,3923,1
+en.wikipedia.org,,en,"Changes related to ""Reham Abdel Ghafour"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Reham_Abdel_Ghafour,200,268,1
+en.wikipedia.org,,en,Johannie Maria Spaan - Wikipedia,https://en.wikipedia.org/wiki/Johannie_Maria_Spaan,200,81,1
+en.wikipedia.org,,en,Carol Young - Wikipedia,https://en.wikipedia.org/wiki/Carol_Young,200,194,1
+en.wikipedia.org,,en,Ensembl genome database project - Wikipedia,https://en.wikipedia.org/wiki/Ensembl,200,378,1
+en.wikipedia.org,,en,P2RY4 - Wikipedia,https://en.wikipedia.org/wiki/P2RY4,200,1062,1
+zh.wikipedia.org,,zh,Ensembl - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/Ensembl,200,193,0
+fr.wikipedia.org,,fr,Récepteur constitutif des androstanes — Wikipédia,https://fr.wikipedia.org/wiki/R%C3%A9cepteur_constitutif_des_androstanes,200,145,0
+zh.wikipedia.org,,zh,基因組 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84,200,628,0
+en.wikipedia.org,,en,IKZF1 - Wikipedia,https://en.wikipedia.org/wiki/IKZF1,200,1141,1
+en.wikipedia.org,,en,Template:Transcription factor and coregulator deficiencies - Wikipedia,https://en.wikipedia.org/wiki/Template:Transcription_factor_and_coregulator_deficiencies,200,174,1
+en.wikipedia.org,,en,MSX1 - Wikipedia,https://en.wikipedia.org/wiki/MSX1,200,1149,1
+en.wikipedia.org,,en,Category:Articles with Project Gutenberg links - Wikipedia,https://en.wikipedia.org/wiki/Category:Articles_with_Project_Gutenberg_links,200,294,1
+en.wikipedia.org,,en,MYBL2 - Wikipedia,https://en.wikipedia.org/wiki/MYBL2,200,1010,1
+sh.wikipedia.org,,sh,Velusetrag - Wikipedia,https://sh.wikipedia.org/wiki/Velusetrag,200,145,0
+en.wikipedia.org,,en,Homeobox - Wikipedia,https://en.wikipedia.org/wiki/Homeodomain_fold,200,1553,1
+en.wikipedia.org,,en,Eighth European Parliament - Wikipedia,https://en.wikipedia.org/wiki/8th_European_Parliament,200,431,1
+en.wikipedia.org,,en,SOX12 - Wikipedia,https://en.wikipedia.org/wiki/SOX12,200,907,1
+en.wikipedia.org,,en,"Changes related to ""Johannie Maria Spaan"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Johannie_Maria_Spaan,200,97,1
+en.wikipedia.org,,en,Treaty of Accession 2011 - Wikipedia,https://en.wikipedia.org/wiki/Treaty_of_Accession_2011,200,852,1
+en.wikipedia.org,,en,"Pages that link to ""Johannie Maria Spaan"" - Wikipedia",https://en.wikipedia.org/wiki/Special:WhatLinksHere/Johannie_Maria_Spaan,200,84,1
+en.wikipedia.org,,en,Shia Islam - Wikipedia,https://en.wikipedia.org/wiki/Shiite,200,2647,1
+en.wikipedia.org,,en,File:PBB GE IKZF1 205039 s at fs.png - Wikipedia,https://en.wikipedia.org/wiki/File:PBB_GE_IKZF1_205039_s_at_fs.png,200,75,1
+en.wikipedia.org,,en,Inosine - Wikipedia,https://en.wikipedia.org/wiki/Inosine,200,771,1
+en.wikipedia.org,,en,Hypoxanthine - Wikipedia,https://en.wikipedia.org/wiki/Hypoxanthine,200,558,1
+en.wikipedia.org,,en,Nucleic acid sequence - Wikipedia,https://en.wikipedia.org/wiki/Nucleic_acid_sequence,200,438,1
+ca.wikipedia.org,,ca,"Genoma - Viquipèdia, l'enciclopèdia lliure",https://ca.wikipedia.org/wiki/Genoma,200,232,0
+en.wikipedia.org,,en,Tissue (biology) - Wikipedia,https://en.wikipedia.org/wiki/Biological_tissue,200,371,1
+en.wikipedia.org,,en,DLX1 - Wikipedia,https://en.wikipedia.org/wiki/DLX1,200,212,1
+en.wikipedia.org,,en,Diabetes mellitus type 1 - Wikipedia,https://en.wikipedia.org/wiki/Diabetes_mellitus_type_1,200,1351,1
+en.wikipedia.org,,en,Bamforth–Lazarus syndrome - Wikipedia,https://en.wikipedia.org/wiki/Bamforth%E2%80%93Lazarus_syndrome,200,232,1
+en.wikipedia.org,,en,Polyphenism - Wikipedia,https://en.wikipedia.org/wiki/Polyphenism,200,284,1
+en.wikipedia.org,,en,"Pages that link to ""SOX12"" - Wikipedia",https://en.wikipedia.org/wiki/Special:WhatLinksHere/SOX12,200,206,1
+en.wikipedia.org,,en,Talk:SOX12 - Wikipedia,https://en.wikipedia.org/wiki/Talk:SOX12,200,66,1
+en.wikipedia.org,,en,"Changes related to ""SOX12"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/SOX12,200,257,1
+uk.wikipedia.org,,uk,Поліфенізм — Вікіпедія,https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%96%D1%84%D0%B5%D0%BD%D1%96%D0%B7%D0%BC,200,94,0
+th.wikipedia.org,,th,แม่แบบ:Transcription factor/coregulator deficiencies - วิกิพีเดีย,https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%81%E0%B8%9A%E0%B8%9A:Transcription_factor/coregulator_deficiencies,200,193,0
+en.wikipedia.org,,en,Ashura - Wikipedia,https://en.wikipedia.org/wiki/Day_of_Ashura,200,969,1
+en.wikipedia.org,,en,Karramiyya - Wikipedia,https://en.wikipedia.org/wiki/Karramiyya,200,387,1
+en.wikipedia.org,,en,Over-the-counter drug - Wikipedia,https://en.wikipedia.org/wiki/Over-the-counter_drug,200,275,1
+en.wikipedia.org,,en,Safavid conversion of Iran to Shia Islam - Wikipedia,https://en.wikipedia.org/wiki/Safavid_conversion_of_Iran_to_Shia_Islam,200,972,1
+en.wikipedia.org,,en,Orotidine 5'-monophosphate - Wikipedia,https://en.wikipedia.org/wiki/Orotidine_5%27-monophosphate,200,153,1
+en.wikipedia.org,,en,Orotic acid - Wikipedia,https://en.wikipedia.org/wiki/Orotic_acid,200,211,1
+en.wikipedia.org,,en,Glycated hemoglobin - Wikipedia,https://en.wikipedia.org/wiki/Glycated_hemoglobin,200,668,1
+en.wikipedia.org,,en,Innate immune system - Wikipedia,https://en.wikipedia.org/wiki/Innate_immune_system,200,718,1
+en.wikipedia.org,,en,Protein isoform - Wikipedia,https://en.wikipedia.org/wiki/Protein_isoform,200,213,1
+zh.wikipedia.org,,zh,乳清酸 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E4%B9%B3%E6%B8%85%E9%85%B8,200,286,0
+vi.wikipedia.org,,vi,Miễn dịch tự nhiên – Wikipedia tiếng Việt,https://vi.wikipedia.org/wiki/Mi%E1%BB%85n_d%E1%BB%8Bch_t%E1%BB%B1_nhi%C3%AAn,200,92,0
+en.wikipedia.org,,en,"Changes related to ""Bamforth–Lazarus syndrome"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Bamforth%E2%80%93Lazarus_syndrome,200,211,1
+vi.wikipedia.org,,vi,Thay đổi liên quan tới “Miễn dịch tự nhiên” – Wikipedia tiếng Việt,https://vi.wikipedia.org/wiki/%C4%90%E1%BA%B7c_bi%E1%BB%87t:Thay_%C4%91%E1%BB%95i_li%C3%AAn_quan/Mi%E1%BB%85n_d%E1%BB%8Bch_t%E1%BB%B1_nhi%C3%AAn,200,74,0
+en.wikipedia.org,,en,"Changes related to ""Tissue (biology)"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Tissue_(biology),200,412,1
+zh.wikipedia.org,,zh,先天免疫系統 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E5%85%88%E5%A4%A9%E5%85%8D%E7%96%AB%E7%B3%BB%E7%B5%B1,200,642,0
+en.wikipedia.org,,en,Low-carbohydrate diet - Wikipedia,https://en.wikipedia.org/wiki/Low-carbohydrate_diet,200,1332,1
+zh.wikipedia.org,,zh,人類白細胞抗原 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E4%BA%BA%E9%A1%9E%E7%99%BD%E7%B4%B0%E8%83%9E%E6%8A%97%E5%8E%9F,200,299,0
+en.wikipedia.org,,en,Tribe - Wikipedia,https://en.wikipedia.org/wiki/Tribe,200,483,1
+en.wikipedia.org,,en,Salik - Wikipedia,https://en.wikipedia.org/wiki/Salik,200,180,1
+zh.wikipedia.org,,zh,髓細胞 - 维基百科，自由的百科全书,https://zh.wikipedia.org/wiki/%E9%AB%93%E7%B4%B0%E8%83%9E,200,533,0
+en.wikipedia.org,,en,Hawza - Wikipedia,https://en.wikipedia.org/wiki/Hawza,200,323,1
+en.wikipedia.org,,en,Zinc finger inhibitor - Wikipedia,https://en.wikipedia.org/wiki/Zinc_finger_inhibitor,200,924,1
+en.wikipedia.org,,en,Orotic aciduria - Wikipedia,https://en.wikipedia.org/wiki/Orotic_aciduria,200,181,1
+en.wikipedia.org,,en,Mebendazole - Wikipedia,https://en.wikipedia.org/wiki/Mebendazole,200,414,1
+en.wikipedia.org,,en,"Changes related to ""Orotic acid"" - Wikipedia",https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Orotic_acid,200,189,1
+zh.wikipedia.org,,zh-TW,先天免疫系統 - 維基百科，自由的百科全書,https://zh.wikipedia.org/zh-tw/%E5%85%88%E5%A4%A9%E5%85%8D%E7%96%AB%E7%B3%BB%E7%B5%B1,200,642,0
+en.wikipedia.org,,en,Atkins diet - Wikipedia,https://en.wikipedia.org/wiki/Atkins_Nutritional_Approach,200,390,1
+en.wikipedia.org,,en,Frederick Madison Allen - Wikipedia,https://en.wikipedia.org/wiki/Frederick_Madison_Allen,200,141,1
+en.wikipedia.org,,en,Chitosan - Wikipedia,https://en.wikipedia.org/wiki/Chitosan,200,762,1
+en.wikipedia.org,,en,Umayyad Caliphate - Wikipedia,https://en.wikipedia.org/wiki/Umayyad,200,1856,1
+en.wikipedia.org,,en,Salisbury steak - Wikipedia,https://en.wikipedia.org/wiki/Salisbury_steak,200,406,1
+en.wikipedia.org,,en,Scarsdale diet - Wikipedia,https://en.wikipedia.org/wiki/Scarsdale_diet,200,106,1
+en.wikipedia.org,,en,Turkic peoples - Wikipedia,https://en.wikipedia.org/wiki/Turkic_peoples,200,1981,1
+en.wikipedia.org,,en,User contributions for Eric Corbett - Wikipedia,https://en.wikipedia.org/wiki/Special:Contributions/Eric_Corbett,200,317,1
+en.wikipedia.org,,en,User talk:Eric Corbett - Wikipedia,https://en.wikipedia.org/wiki/User_talk:Eric_Corbett,200,185,1
+en.wikipedia.org,,en,TP53 - Wikipedia,https://en.wikipedia.org/wiki/TP53,200,3353,1
+en.wikipedia.org,,en,Sex hormone receptor - Wikipedia,https://en.wikipedia.org/wiki/Sex_hormone_receptor,200,2748,1
+en.wikipedia.org,,en,User contributions for Rjwilmsi - Wikipedia,https://en.wikipedia.org/wiki/Special:Contributions/Rjwilmsi,200,277,1
+es.wikipedia.org,,es,"Receptor de hormonas sexuales - Wikipedia, la enciclopedia libre",https://es.wikipedia.org/wiki/Receptor_de_hormonas_sexuales,200,55,0
+en.wikipedia.org,,en,PTK2 - Wikipedia,https://en.wikipedia.org/wiki/PTK2,200,1155,1
+sv.wikipedia.org,,sv,PTK2 – Wikipedia,https://sv.wikipedia.org/wiki/PTK2,200,63,0
+en.wikipedia.org,,en,File:Map-TurkicLanguages.png - Wikipedia,https://en.wikipedia.org/wiki/File:Map-TurkicLanguages.png,200,343,1
+en.wikipedia.org,,en,YWHAZ - Wikipedia,https://en.wikipedia.org/wiki/YWHAZ,200,708,1
+en.wikipedia.org,,en,EGR1 - Wikipedia,https://en.wikipedia.org/wiki/Zif268,200,1072,1
+sh.wikipedia.org,,sh,PTK2 - Wikipedia,https://sh.wikipedia.org/wiki/PTK2,200,774,0
+ckb.wikipedia.org,,ckb,تورک - ویکیپیدیا، ئینسایکڵۆپیدیای ئازاد,https://ckb.wikipedia.org/wiki/%D8%AA%D9%88%D8%B1%DA%A9,200,127,0
+en.wikipedia.org,,en,Turki - Wikipedia,https://en.wikipedia.org/wiki/Turki,200,160,1
+,,,SpiderException -- Ignoring non-200 response,https://sv.wikipedia.org/wiki/Special:Senaste_relaterade_%C3%A4ndringar/PTK2,404,,
+en.wikipedia.org,,en,File:Museum für Indische Kunst Dahlem Berlin Mai 2006 064.jpg - Wikipedia,https://en.wikipedia.org/wiki/File:Museum_f%C3%BCr_Indische_Kunst_Dahlem_Berlin_Mai_2006_064.jpg,200,127,1
+en.wikipedia.org,,en,Nishapur - Wikipedia,https://en.wikipedia.org/wiki/Nishapur,200,1433,1
+en.wikipedia.org,,en,Gagauz language - Wikipedia,https://en.wikipedia.org/wiki/Gagauz_language,200,379,1
+en.wikipedia.org,,en,Crimean Karaites - Wikipedia,https://en.wikipedia.org/wiki/Crimean_Karaites,200,1247,1
+sh.wikipedia.org,,sh,Janus kinaza 2 - Wikipedia,https://sh.wikipedia.org/wiki/Janus_kinaza_2,200,678,0
+en.wikipedia.org,,en,Seljuq dynasty - Wikipedia,https://en.wikipedia.org/wiki/Seljuk_Turks,200,1247,1
+en.wikipedia.org,,en,Babur - Wikipedia,https://en.wikipedia.org/wiki/Babur,200,978,1
+en.wikipedia.org,,en,User groups management - Wikipedia,https://en.wikipedia.org/wiki/Special:UserRights/Rjwilmsi,200,57,1
+en.wikipedia.org,,en,Timur - Wikipedia,https://en.wikipedia.org/wiki/Timur,200,1260,1
+en.wikipedia.org,,en,Turks of Western Thrace - Wikipedia,https://en.wikipedia.org/wiki/Turks_of_Western_Thrace,200,817,1
+en.wikipedia.org,,en,All pages with prefix - Wikipedia,https://en.wikipedia.org/wiki/Special:PrefixIndex/User:Rjwilmsi/,200,50,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/1-84511-056-0,200,1443,1
+en.wikipedia.org,,en,Protein targeting - Wikipedia,https://en.wikipedia.org/wiki/Protein_transport,200,424,1
+en.wikipedia.org,,en,AKT1 - Wikipedia,https://en.wikipedia.org/wiki/AKT1,200,1066,1
+en.wikipedia.org,,en,Trakai - Wikipedia,https://en.wikipedia.org/wiki/Trakai,200,494,1
+en.wikipedia.org,,en,Counties of Iran - Wikipedia,https://en.wikipedia.org/wiki/Counties_of_Iran,200,1275,1
+ru.wikipedia.org,,ru,AKT1 — Википедия,https://ru.wikipedia.org/wiki/AKT1,200,380,0
+en.wikipedia.org,,en,Jewish dance - Wikipedia,https://en.wikipedia.org/wiki/Jewish_dance,200,223,1
+en.wikipedia.org,,en,Rabbinic Judaism - Wikipedia,https://en.wikipedia.org/wiki/Rabbanites,200,649,1
+en.wikipedia.org,,en,Polish language - Wikipedia,https://en.wikipedia.org/wiki/Polish_language,200,1282,1
+en.wikipedia.org,,en,Kharraqan towers - Wikipedia,https://en.wikipedia.org/wiki/Kharraqan_towers,200,240,1
+en.wikipedia.org,,en,Book sources - Wikipedia,https://en.wikipedia.org/wiki/Special:BookSources/978-0-8179-6662-1,200,1443,1
+en.wikipedia.org,,en,Literal translation - Wikipedia,https://en.wikipedia.org/wiki/Literal_translation,200,235,1
+en.wikipedia.org,,en,Raions of Ukraine - Wikipedia,https://en.wikipedia.org/wiki/Raions_of_Ukraine,200,1403,1
+en.wikipedia.org,,en,Romanization of Persian - Wikipedia,https://en.wikipedia.org/wiki/Romanization_of_Persian,200,388,1
+en.wikipedia.org,,en,File:1842 tomb of Babur by Charles Masson.png - Wikipedia,https://en.wikipedia.org/wiki/File:1842_tomb_of_Babur_by_Charles_Masson.png,200,63,1
+pt.wikipedia.org,,pt,"AKT1 – Wikipédia, a enciclopédia livre",https://pt.wikipedia.org/wiki/AKT1,200,748,0
+en.wikipedia.org,,en,Millet (Ottoman Empire) - Wikipedia,https://en.wikipedia.org/wiki/Millet_(Ottoman_Empire),200,563,1
+en.wikipedia.org,,en,Ganges - Wikipedia,https://en.wikipedia.org/wiki/Ganges_River,200,2512,1
+en.wikipedia.org,,en,Turks in Berlin - Wikipedia,https://en.wikipedia.org/wiki/Turks_in_Berlin,200,238,1
+en.wikipedia.org,,en,User:Rjwilmsi/vector.js - Wikipedia,https://en.wikipedia.org/wiki/User:Rjwilmsi/vector.js,200,52,1
+en.wikipedia.org,,en,User:Rjwilmsi/vector.css - Wikipedia,https://en.wikipedia.org/wiki/User:Rjwilmsi/vector.css,200,52,1
+en.wikipedia.org,,en,Spanish language - Wikipedia,https://en.wikipedia.org/wiki/Spanish_language,200,3033,1
