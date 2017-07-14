@@ -45,7 +45,7 @@ class HnScraperSpiderMiddleware(object):
         item = SeedItem()
         item['url'] = response.url
         item['response_code'] = response.status
-        item['title'] = "SpiderException -- " + str(exception)
+        item['response_type'] = "SpiderException -- " + str(exception)
         yield item
 
         pass

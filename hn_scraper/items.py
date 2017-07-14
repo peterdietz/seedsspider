@@ -22,11 +22,9 @@ class HnArticleItem(scrapy.Item):
 
 class SeedItem(scrapy.Item):
     url = scrapy.Field()
-    title = scrapy.Field()
-    language = scrapy.Field()
+    declared_language = scrapy.Field()
+    detected_language = scrapy.Field()
     response_code = scrapy.Field()
     num_links = scrapy.Field()
-    domain = scrapy.Field()
-    query_path = scrapy.Field()
-    score = scrapy.Field()
+    response_type = scrapy.Field()
     pass

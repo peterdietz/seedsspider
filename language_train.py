@@ -9,21 +9,17 @@ from urlparse import urlparse
 import os
 
 crawled_items = os.getcwd()+'/export.csv'
-#crawled_items = '/opt/export.csv'
 df = pd.read_csv(crawled_items, encoding='utf-8')
 df.drop_duplicates(inplace=True)
 
-#COLUMNS: domain,query_path,language,title,url,response_code,num_links,score
-#Remove empty, and only keep neccessary fields
-df = df[df['language'].isin({'en', 'es', 'de', 'fr', 'ru', 'sv', 'no'})]
-df = df[['url', 'language']]
+accepted_languages = {'en', 'es', 'de', 'fr', 'ru', 'sv', 'no', 'zh', 'zh-cn'}
+language_field = 'declared_language'
 
-#df = df[df['score'].isin({'0.0', '1.0'})]
-#df = df[['url', 'score']]
-
+df = df[df[language_field].isin(accepted_languages)]
+df = df[['url', language_field]]
 
 # Split the dataset in training and test set:
-docs_train, docs_test, y_train, y_test = train_test_split(df['url'], df['language'], test_size=0.5)
+docs_train, docs_test, y_train, y_test = train_test_split(df['url'], df[language_field], test_size=0.5)
 
 
 #Vectorizer will tokenize the url into pieces
@@ -63,7 +59,10 @@ sentences = [
     'https://sv.wikipedia.org/wiki/Geometri',
     'https://es.wikipedia.org/wiki/Geometr%C3%ADa',
     'https://de.wikipedia.org/wiki/Geometrie',
-    'https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F'
+    'https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F',
+    'https://twitter.com/elonmusk',
+    'https://twitter.com/elonmusk?lang=sv',
+    'https://twitter.com/something?lang=zh-cn'
 ]
 predicted = clf.predict(sentences)
 
