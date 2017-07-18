@@ -1,48 +1,29 @@
 # -*- coding: utf-8 -*-
 import scrapy
-import lxml
 
 from scrapy.spiders import Spider
-from scrapy import signals
 from hn_scraper.items import SeedItem
 from polyglot.detect import Detector
 from bs4 import BeautifulSoup
-from urlparse import urlparse
+from language_train import LanguageTrain
 
 class SeedsSpider(Spider):
     name = "SeedsSpider"
     #allowed_domains = ["wikipedia.org", 'twitter.com']
     #allowed_domains = ['twitter.com']
+    language_train = None
 
     def __init__(self):
         ## In VC:  java -jar impl/task/lambda/target/vericite-task.jar seedslist /opt/seeds.txt
-        import os
-        print os.getcwd()
-        seedsfile = os.getcwd()+"/seeds.txt"
-        with open(seedsfile, 'r') as f:
-            #self.start_urls = f.read(10)
-            # self.start_urls = f.readlines()
-            self.start_urls = f.read().splitlines()
-
-        ##subset
+        #seedsfile = os.getcwd()+"/seeds.txt"
+        #with open(seedsfile, 'r') as f:
+        #    self.start_urls = f.read().splitlines()
+        #
         #self.start_urls = self.start_urls[0:10]
-        #self.start_urls.extend({'https://twitter.com/elonmusk?lang=sv', 'https://twitter.com/elonmusk'})
-
-        print "STARTING URLS:"
-        print self.start_urls
-
-    #@classmethod
-    #def from_crawler(cls, crawler, *args, **kwargs):
-    #    spider = super(SeedsSpider, cls).from_crawler(crawler, *args, **kwargs)
-    #    crawler.signals.connect(spider.item_dropped, signal=signals.item_dropped)
-    #    crawler.signals.connect(spider.request_dropped, signal=signals.request_dropped)
-    #    return spider
-
-    #def item_dropped(self, item, response, exception, spider):
-    #    spider.logger.info('Spider item dropped: ' + str(item) + ' - ' + response.url)
-
-    #def request_dropped(self, request, spider):
-    #    spider.logger.info('request_dropped: ' + request.url)
+        #
+        #print "STARTING URLS:"
+        #print self.start_urls
+        self.language_train = LanguageTrain()
 
 
     def extract_one(self, selector, xpath, default=None):
@@ -76,9 +57,6 @@ class SeedsSpider(Spider):
         item['url'] = response.url
         item['response_code'] = response.status
         item['response_type'] = "Binary"
-        #item['num_links'] = -1
-        #item['language']
-        #item['docType']
         yield item
 
     # text, xml/rdf
@@ -113,10 +91,15 @@ class SeedsSpider(Spider):
 
         num_links = 0
         for href in response.css('a::attr(href)').extract():
-            yield scrapy.Request(
-                url=response.urljoin(href),
-                callback=self.parse
-            )
+            url = response.urljoin(href)
+            if self.language_train.is_url_predicted_in_accepted_lang(url):
+                print "link is predicted to be acceptable, keeping: " + url
+                #yield scrapy.Request(
+                #    url=response.urljoin(href),
+                #    callback=self.parse
+                #)
+            else:
+                print "Skipping url because of predicted language:" + url
             num_links += 1
         item['num_links'] = num_links
 

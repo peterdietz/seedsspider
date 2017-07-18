@@ -7,7 +7,7 @@ from sklearn import metrics
 import pandas as pd
 from urlparse import urlparse
 import os
-
+import glob
 
 class LanguageTrain(object):
     clf = None
@@ -28,9 +28,6 @@ class LanguageTrain(object):
 
 
     def __init__(self):
-        df = self.read_dataset(os.getcwd() + '/export.csv')
-        urls_train, urls_test, lang_train, lang_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.5)
-
         # tokenize the url into pieces
         def my_tokenizer(url):
             u = urlparse(url)
@@ -43,6 +40,12 @@ class LanguageTrain(object):
             ('clf', Perceptron()),
         ])
 
+        # Import all data
+        self.import_all_exports()
+
+    def test(self):
+        df = self.read_dataset(os.getcwd() + '/export.csv')
+        urls_train, urls_test, lang_train, lang_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.5)
         self.clf.fit(urls_train, lang_train)
         lang_predicted = self.clf.predict(urls_test)
 
@@ -59,7 +62,7 @@ class LanguageTrain(object):
         self.predict_pairs(self.pairs)
 
     def read_dataset(self, filename):
-        df = pd.read_csv(filename, encoding='utf-8')
+        df = pd.read_csv(filename, encoding='utf-8', error_bad_lines=False)
         df.drop_duplicates(inplace=True)
         df = df[df[self.language_field].isin(self.accepted_languages)]
         df = df[[self.url_field, self.language_field]]
@@ -80,6 +83,15 @@ class LanguageTrain(object):
         self.clf.fit(urls, langs)
         self.predict_pairs(pairs)
 
+    def import_all_exports(self):
+        export_files = glob.glob(os.getcwd() + "/export*.csv")
+        for file in export_files:
+            df = self.read_dataset(file)
+            print "Import file: {} processing {} records".format(file, str(len(df)))
+            docs_train, docs_test, y_train, y_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.0)
+            self.clf.fit(docs_train, y_train)
+
+
     def get_fields(self, pairs):
         urls = []
         langs = []
@@ -99,9 +111,21 @@ class LanguageTrain(object):
             print "#{} predicted:[{}], expected:[{}], url:[{}], result: {}".format(i, prediction, langs[i], urls[i], result)
             i += 1
 
+    def is_url_predicted_in_accepted_lang(self, url):
+        predicted = self.clf.predict([url])
+        return predicted[0] in self.accepted_languages
+
+    def train_single(self, url, lang):
+        # Can't insert a single url/lang
+        pairs = [{'url':url, 'lang':lang},
+                {'url':'https://twitter.com/elonmusk?lang=de', 'lang':'de'}]
+        urls, langs = self.get_fields(pairs)
+        self.clf.fit(urls, langs)
+
 
 if __name__ == '__main__':
     inst = LanguageTrain()
 
+    inst.test()
     inst.add_two_data()
     inst.add_more_data()

@@ -44,17 +44,7 @@ ROBOTSTXT_OBEY = True
 #   'Accept-Language': 'en',
 #}
 
-# Enable or disable spider middlewares
-# See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'hn_scraper.middlewares.HnScraperSpiderMiddleware': 543,
-}
 
-# Enable or disable downloader middlewares
-# See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'hn_scraper.middlewares.HnDownloaderMiddleware': 543,
-#}
 
 HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.Filesystem.CacheStorage'
 
@@ -92,23 +82,30 @@ HTTPCACHE_IGNORE_HTTP_CODES = []
 HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 
-### FRONTERA
-#SPIDER_MIDDLEWARES = {}
-#DOWNLOADER_MIDDLEWARES = {}
-#SPIDER_MIDDLEWARES.update({
-#    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerSpiderMiddleware': 999
-#}, )
-#DOWNLOADER_MIDDLEWARES.update({
-#    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerDownloaderMiddleware':
-#        999
-#})
-#SCHEDULER = 'frontera.contrib.scrapy.schedulers.frontier.FronteraScheduler'
-#FRONTERA_SETTINGS = 'hn_scraper.frontera_settings'
+import os
+import datetime
+
+# Export to export-DATE.csv
+FEED_URI = 'file:///'+os.getcwd()+'/export-'+datetime.datetime.now().isoformat()+'.csv'
+FEED_FORMAT = 'csv'
 
 #AJAXCRAWL_ENABLED = True
 
-import os
-print os.getcwd()
 
-FEED_URI = 'file:///'+os.getcwd()+'/export-all-seeds.csv'
-FEED_FORMAT = 'csv'
+### FRONTERA + Middleware configuration
+DOWNLOADER_MIDDLEWARES = {
+    #'hn_scraper.middlewares.HnDownloaderMiddleware': 543,
+    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerDownloaderMiddleware': 999,
+}
+
+SPIDER_MIDDLEWARES = {
+    'frontera.contrib.scrapy.middlewares.seeds.file.FileSeedLoader': 1,
+    'hn_scraper.middlewares.HnScraperSpiderMiddleware': 543,
+    'frontera.contrib.scrapy.middlewares.schedulers.SchedulerSpiderMiddleware': 999
+}
+
+SCHEDULER = 'frontera.contrib.scrapy.schedulers.frontier.FronteraScheduler'
+FRONTERA_SETTINGS = 'hn_scraper.frontera_settings'
+
+SEEDS_SOURCE = os.getcwd()+"/seeds.txt"
+#SEEDS_SOURCE = s3://bucket/seeds.txt
