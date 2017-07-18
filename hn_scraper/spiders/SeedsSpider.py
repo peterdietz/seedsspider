@@ -12,7 +12,7 @@ from urlparse import urlparse
 class SeedsSpider(Spider):
     name = "SeedsSpider"
     #allowed_domains = ["wikipedia.org", 'twitter.com']
-    allowed_domains = ['twitter.com']
+    #allowed_domains = ['twitter.com']
 
     def __init__(self):
         ## In VC:  java -jar impl/task/lambda/target/vericite-task.jar seedslist /opt/seeds.txt
@@ -25,9 +25,8 @@ class SeedsSpider(Spider):
             self.start_urls = f.read().splitlines()
 
         ##subset
-        self.start_urls = self.start_urls[0:10]
-
-        self.start_urls.extend({'https://twitter.com/elonmusk?lang=sv', 'https://twitter.com/elonmusk'})
+        #self.start_urls = self.start_urls[0:10]
+        #self.start_urls.extend({'https://twitter.com/elonmusk?lang=sv', 'https://twitter.com/elonmusk'})
 
         print "STARTING URLS:"
         print self.start_urls

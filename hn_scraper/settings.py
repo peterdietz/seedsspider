@@ -110,5 +110,5 @@ HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 import os
 print os.getcwd()
 
-FEED_URI = 'file:///'+os.getcwd()+'/export.csv'
+FEED_URI = 'file:///'+os.getcwd()+'/export-all-seeds.csv'
 FEED_FORMAT = 'csv'
