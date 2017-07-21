@@ -8,24 +8,27 @@ import pandas as pd
 from urlparse import urlparse
 import os
 import glob
+import sys
+import validators
+
 
 class LanguageTrain(object):
     clf = None
-    accepted_languages = {'en', 'es', 'de', 'fr', 'ru', 'sv', 'no', 'zh', 'zh-cn'}
+    # accepted_languages = {'en', 'es', 'de', 'fr', 'ru', 'sv', 'no', 'zh', 'zh-cn'}
+    accepted_languages = {'en'}
     language_field = 'declared_language'
     url_field = 'url'
 
-    pairs = [{'url':'https://en.wikipedia.org/wiki/Rhombicuboctahedron', 'lang':'en'},
-             {'url':'https://en.wikipedia.org/wiki/Uniform_polyhedron', 'lang':'en'},
-             {'url':'https://sv.wikipedia.org/wiki/Geometri', 'lang':'sv'},
-             {'url':'https://es.wikipedia.org/wiki/Geometr%C3%ADa', 'lang':'es'},
-             {'url':'https://de.wikipedia.org/wiki/Geometrie', 'lang':'de'},
-             {'url':'https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F', 'lang':'ru'},
-             {'url':'https://twitter.com/elonmusk', 'lang':'en'},
-             {'url':'https://twitter.com/elonmusk?lang=sv', 'lang':'sv'},
-             {'url':'https://twitter.com/something?lang=zh-cn', 'lang':'zh-cn'},
+    pairs = [{'url': 'https://en.wikipedia.org/wiki/Rhombicuboctahedron', 'lang': 'en'},
+             {'url': 'https://en.wikipedia.org/wiki/Uniform_polyhedron', 'lang': 'en'},
+             {'url': 'https://sv.wikipedia.org/wiki/Geometri', 'lang': 'sv'},
+             {'url': 'https://es.wikipedia.org/wiki/Geometr%C3%ADa', 'lang': 'es'},
+             {'url': 'https://de.wikipedia.org/wiki/Geometrie', 'lang': 'de'},
+             {'url': 'https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F', 'lang': 'ru'},
+             {'url': 'https://twitter.com/elonmusk', 'lang': 'en'},
+             {'url': 'https://twitter.com/elonmusk?lang=sv', 'lang': 'sv'},
+             {'url': 'https://twitter.com/something?lang=zh-cn', 'lang': 'zh-cn'},
              ]
-
 
     def __init__(self):
         # tokenize the url into pieces
@@ -64,17 +67,12 @@ class LanguageTrain(object):
     def read_dataset(self, filename):
         df = pd.read_csv(filename, encoding='utf-8', error_bad_lines=False)
         df.drop_duplicates(inplace=True)
-        df = df[df[self.language_field].isin(self.accepted_languages)]
+        df = df.dropna()
+        df = df[df[self.language_field].notnull() & df[self.url_field].notnull()]
         df = df[[self.url_field, self.language_field]]
         return df
 
-    def add_more_data(self):
-        print("ADDING MORE DATA")
-        df = self.read_dataset(os.getcwd() + '/export-all-seeds.csv')
-        docs_train, docs_test, y_train, y_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.0)
-        self.clf.fit(docs_train, y_train)
-        self.predict_pairs(self.pairs)
-
+    # Can't add just one, (too small)
     def add_two_data(self):
         print 'Add one data'
         pairs = [{'url':'https://twitter.com/elonmusk?lang=sv', 'lang':'sv'},
@@ -86,11 +84,14 @@ class LanguageTrain(object):
     def import_all_exports(self):
         export_files = glob.glob(os.getcwd() + "/export*.csv")
         for file in export_files:
-            df = self.read_dataset(file)
-            print "Import file: {} processing {} records".format(file, str(len(df)))
-            docs_train, docs_test, y_train, y_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.0)
-            self.clf.fit(docs_train, y_train)
-
+            if self.is_non_zero_file(file):
+                try:
+                    df = self.read_dataset(file)
+                    print "Import file: {} processing {} records".format(file, str(len(df)))
+                    docs_train, docs_test, y_train, y_test = train_test_split(df[self.url_field], df[self.language_field], test_size=0.0)
+                    self.clf.fit(docs_train, y_train)
+                except ValueError as e:
+                    print "Unable to import file: {}, exception: {}".format(file, str(e))
 
     def get_fields(self, pairs):
         urls = []
@@ -117,15 +118,24 @@ class LanguageTrain(object):
 
     def train_single(self, url, lang):
         # Can't insert a single url/lang
-        pairs = [{'url':url, 'lang':lang},
-                {'url':'https://twitter.com/elonmusk?lang=de', 'lang':'de'}]
+        pairs = [{'url': url, 'lang': lang},
+                {'url': 'https://twitter.com/elonmusk?lang=de', 'lang': 'de'}]
         urls, langs = self.get_fields(pairs)
         self.clf.fit(urls, langs)
+
+    def is_non_zero_file(self, fpath):
+        return os.path.isfile(fpath) and os.path.getsize(fpath) > 0
+
+    def predict_lang(self, *args):
+        for arg in args:
+            for url in arg:
+                if(validators.url(url)):
+                    predicted = self.clf.predict([url])
+                    print "URL: {} has predicted lang of {}".format(url, predicted)
 
 
 if __name__ == '__main__':
     inst = LanguageTrain()
-
     inst.test()
     inst.add_two_data()
-    inst.add_more_data()
+    inst.predict_lang(sys.argv)

@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
+from scrapy_redis.spiders import RedisSpider
 import scrapy
 
-from scrapy.spiders import Spider
 from hn_scraper.items import SeedItem
 from polyglot.detect import Detector
 from bs4 import BeautifulSoup
 from language_train import LanguageTrain
 
-class SeedsSpider(Spider):
+
+class SeedsSpider(RedisSpider):
     name = "SeedsSpider"
     #allowed_domains = ["wikipedia.org", 'twitter.com']
-    #allowed_domains = ['twitter.com']
     language_train = None
 
     def __init__(self):
-        ## In VC:  java -jar impl/task/lambda/target/vericite-task.jar seedslist /opt/seeds.txt
+        #
         #seedsfile = os.getcwd()+"/seeds.txt"
         #with open(seedsfile, 'r') as f:
         #    self.start_urls = f.read().splitlines()
@@ -23,14 +23,8 @@ class SeedsSpider(Spider):
         #
         #print "STARTING URLS:"
         #print self.start_urls
+        #self.start_urls = ['https://www.x.com']
         self.language_train = LanguageTrain()
-
-
-    def extract_one(self, selector, xpath, default=None):
-        extracted = selector.xpath(xpath).extract()
-        if extracted:
-            return extracted[0]
-        return default
 
     def parse(self, response):
         response_type = type(response)
@@ -49,7 +43,7 @@ class SeedsSpider(Spider):
             for item in self.parse_Response(response):
                 yield item
 
-    ## non-text, binary/PDF
+    # non-text, binary/PDF
     def parse_Response(self, response):
         print "NotImplemented Binary response:" + response.url
 
@@ -86,18 +80,18 @@ class SeedsSpider(Spider):
 
         if language.reliable:
             lang = language.language.code
-            print "detected language: " + language.language.code + " confidence:" + str(language.language.confidence)
+            #print "detected language: " + language.language.code + " confidence:" + str(language.language.confidence)
             item['detected_language'] = lang
 
         num_links = 0
         for href in response.css('a::attr(href)').extract():
             url = response.urljoin(href)
             if self.language_train.is_url_predicted_in_accepted_lang(url):
-                print "link is predicted to be acceptable, keeping: " + url
-                #yield scrapy.Request(
-                #    url=response.urljoin(href),
-                #    callback=self.parse
-                #)
+                #print "link is predicted to be acceptable, keeping: " + url
+                yield scrapy.Request(
+                    url=response.urljoin(href),
+                    callback=self.parse
+                )
             else:
                 print "Skipping url because of predicted language:" + url
             num_links += 1

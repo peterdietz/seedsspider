@@ -1,13 +1,19 @@
 # Scrapy Spider
 
+You will need to use pip install to install several python modules first.
+```
+pip install -r requirements.txt
+```
+
 (demo) To parse items out of hackernews
 ```
 scrapy crawl HackerNews -o results.csv -t csv
 ```
 
-To crawl the web from seeds.
+To crawl the web from seeds (using scrapy_redis).
 ```
-scrapy crawl SeedsSpider
+~~scrapy runspider~~
+scrapy runspider hn_scraper/spiders/SeedsSpider.py
 ```
 
 Reads seeds from `seeds.txt`, which has one url per line:
@@ -15,6 +21,12 @@ Reads seeds from `seeds.txt`, which has one url per line:
 https://en.wikipedia.org/wiki/Rhombicuboctahedron
 https://martinfowler.com/articles/viticulture-gallerist.html
 ```
+
+Using your own seeds generator, perhaps do something like:
+```
+java -jar impl/task/lambda/target/vericite-task.jar seedslist /opt/seeds.txt
+```
+
 Writes output scraped items (intermediate look at the data) to `export.csv`
 ```
 detected_language,url,response_code,num_links,response_type,declared_language
@@ -24,14 +36,24 @@ en,https://en.wikipedia.org/wiki/Donald_Woods,200,312,HTML,en
 es,http://www.taringa.net/posts/info/18045919/Kaprosuchus-el-cocodrilo-jabali.html,200,137,HTML,es
 ```
 
+And also to redis:
+```
+redis-cli
+127.0.0.1:6379> lindex SeedsSpider:items 2
+
+{
+  "detected_language": "en",
+  "url": "https://quizlet.com/37641628/american-literature-flash-cards/",
+  "response_code": 200,
+  "num_links": 29,
+  "response_type": "HTML",
+  "declared_language": "en-gb"
+} 
+```
+
 To do some ML classifying on the output:
 ```
 python language_train.py
-```
-
-You will need to use pip install to install several python modules first.
-```
-pip install -r requirements.txt
 ```
 
 The language classifier should output predictions:

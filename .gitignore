@@ -3,3 +3,5 @@ hn_scraper/*.pyc
 *.db
 results.csv
 .scrapy
+
+export-*.csv
