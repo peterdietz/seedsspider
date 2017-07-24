@@ -6,6 +6,7 @@ from hn_scraper.items import SeedItem
 from polyglot.detect import Detector
 from bs4 import BeautifulSoup
 from language_train import LanguageTrain
+from textstat.textstat import textstat
 
 
 class SeedsSpider(RedisSpider):
@@ -75,6 +76,9 @@ class SeedsSpider(RedisSpider):
             item['declared_language'] = lang
 
         stripped_text = soup.get_text()
+        item['num_words'] = str(textstat.lexicon_count(stripped_text))
+        item['fk_grade'] = textstat.flesch_kincaid_grade(stripped_text)
+
         Detector(stripped_text, True)
         language = Detector(stripped_text)
 

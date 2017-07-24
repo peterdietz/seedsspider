@@ -27,4 +27,6 @@ class SeedItem(scrapy.Item):
     response_code = scrapy.Field()
     num_links = scrapy.Field()
     response_type = scrapy.Field()
+    num_words = scrapy.Field()
+    fk_grade = scrapy.Field()
     pass

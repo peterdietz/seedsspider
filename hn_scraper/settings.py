@@ -92,12 +92,8 @@ FEED_FORMAT = 'csv'
 #AJAXCRAWL_ENABLED = True
 
 SPIDER_MIDDLEWARES = {
-    'frontera.contrib.scrapy.middlewares.seeds.file.FileSeedLoader': 1,
     'hn_scraper.middlewares.HnScraperSpiderMiddleware': 543,
 }
-
-# VC can generate seeds:  java -jar impl/task/lambda/target/vericite-task.jar seedslist /opt/seeds.txt
-SEEDS_SOURCE = os.getcwd()+"/seeds.txt"
 
 # SCRAPY REDIS
 ############################################################################
